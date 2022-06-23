@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title%}{% endblock %}
+
+{% block content%}
+<center>
+    <h1>hello ma niga, here are your results:</h1> </center>
+<div class="embeded" style="position:relative; top: 50px; left: 685px">
+<h1>
+    <a><iframe width="560" height="315" src="https://www.youtube.com/embed/{{ video_ids }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+</h1>
+</div>
+
+<html>
+<head>
+<style>
+.goback {
+  position: relative; top: 100px; left: 916px;
+  background-color: #2c2c2c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <a href="/" class="goback">Go Back</a>
+</body>
+{% endblock %}

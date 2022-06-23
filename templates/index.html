@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block title %} <center> <h1> wellcome to my website </h1> </center>{% endblock %}
+
+{%  block content %}
+<strong><center> search! </center></strong>
+
+<form method="POST">
+    <center>
+    <p><input type="text" name="text" placeholder="search!"></p>
+    <p> <input type="submit" value="submit"> </p>
+</center>
+</form>
+
+{% endblock %}

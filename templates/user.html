@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}]hello{% endblock %}
+
+{% block content %} 
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+    {% for msg in messages %}
+       <strong>{{msg}}</strong>
+    {% endfor %}
+{% endif %}
+{% endwith %}
+
+<center><p> wellcome - {{ user }}</p>
+<p> gmail - {{ email }}</p></center>
+
+{% endblock %}
